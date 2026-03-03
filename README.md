@@ -69,4 +69,4 @@ EMG Showing/
 1. 实现实际的蓝牙/USB连接逻辑
 2. 替换模拟数据生成器为真实数据接收器
 3. 根据实际传感器协议解析数据
-4. 确保3个传感器分别对应Right Arm (RA)、Left Arm (LA)、Left Foot (LF)
+4. 确保3个传感器分别对应Right Arm (RA)、Left Arm (LA)、Left Foot (LF)# ecg-showing
