@@ -1,0 +1,75 @@
+.ecg-charts-container {
+  background: white;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ecg-leads-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  overflow-y: auto;
+}
+
+.ecg-lead-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  min-height: 120px;
+  position: relative;
+}
+
+.ecg-lead-label {
+  width: 60px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.ecg-lead-chart {
+  flex: 1;
+  height: 100px;
+  position: relative;
+  background: white;
+  padding: 10px 15px 10px 0;
+}
+
+.ecg-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.ecg-settings {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.ecg-record-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ecg-record-btn:hover {
+  background: #16a34a;
+}
+
+.ecg-record-btn:active {
+  background: #15803d;
+}

@@ -1,0 +1,117 @@
+.status-display {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.status-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.status-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.status-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ecg-leads {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ecg-lead-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.ecg-lead-item:nth-child(1) {
+  border-left-color: #60a5fa;
+}
+
+.ecg-lead-item:nth-child(2) {
+  border-left-color: #34d399;
+}
+
+.ecg-lead-item:nth-child(3) {
+  border-left-color: #f472b6;
+}
+
+.ecg-lead-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  color: #fbbf24;
+}
+
+.ecg-lead-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.battery-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.battery-level {
+  height: 100%;
+  border-radius: 18px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.battery-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 700;
+  z-index: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.heart-rate-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.heart-rate-unit {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
